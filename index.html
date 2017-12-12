@@ -2,17 +2,27 @@
 <html lang="pl">
     <head>
         <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>crushlines</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-
+		<script src="script.js"></script>
     </head>
     <body>
-        <div>
-            <canvas id="c"></canvas>
-        </div>
-        <button onclick="#">START</button>
-        <button onclick="newGame()">NEWGAME</button>
-        <p id="p">KOMENTARZ</p>
-        <script src="cccl.js"></script>
+		<nav id="navigation">
+			<div class="menu-navigation">
+				<div id="new-game" class="button"><p class="button-description">new game</p></div>
+				<div id="controls" class="button"><p class="button-description">controls</p></div>
+				<div id="difficulty" class="button"><p class="button-description">difficulty</p></div>
+				<div id="game-mode" class="button"><p class="button-description">game mode</p></div>
+				<div id="view-style" class="button"><p class="button-description">view style</p></div>
+			</div>
+			<div id="difficulty-navigation" class="group-difficulties hide-element">
+				<div id="easy" class="button difficulty-button"><p class="button-description">easy</p></div>
+				<div id="normal" class="button difficulty-button"><p class="button-description">normal</p></div>
+				<div id="hard" class="button difficulty-button"><p class="button-description">hard</p></div>
+			</div>
+		</nav>
+		<canvas id="canvas-game-map" class="yellow-background"></canvas>
+		<p id="p" class="game-comment">PLAYER 1 CONTROL KEYS: WSAD / PLAYER 2 CONTROL KEYS: ARROWS</p>
     </body>
 </html>  

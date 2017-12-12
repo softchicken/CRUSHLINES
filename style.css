@@ -1,8 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	
+}
+
 body {
     background-color: #000000;
-    color: #ffffff;
+    color: #FFFFFF;
+	font-family: monospace;
+	overflow: hidden;
+	text-align: center;
+}
+
+.yellow-background {
+	z-index: 1;
+	background-color: #FFB400;
+	background-color: #FFFFFF;
 }
 
 canvas {
-background-color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+}
+
+
+.hide-element {
+	display: none;
+}
+
+.menu-navigation {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.button {
+	cursor: pointer;
+ 	background-color: #00A6ED;
+	margin: 30px 0;
+	border: solid #F6511D 4px;
+	width: 300px;
+	height: 75px;
+
+}
+
+.button .button-description {
+	color: #0D2C54;
+	text-align: center;
+	padding: 15px 0;
+	text-transform: uppercase;
+	font-size: 3em;
+	white-space: nowrap;
+
+}
+
+.active-button {
+	background-color: #7FB800;
+	color: #F6511D;
+}
+
+.group-difficulties {
+	position: absolute;
+	top: 39%;
+	left: 65%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.difficulty-button {
+	font-size: 0.5em;
+	width: 150px;
+	height: 50px;
+}
+
+.game-comment {
+	font-size: 2em;
+	text-transform: uppercase;
 }
